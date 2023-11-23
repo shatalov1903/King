@@ -30,26 +30,28 @@
     }
   }
 
-  &__nav {
-  }
-
   &__ul {
     display: flex;
     align-items: center;
     gap: 34px;
 
-    @include tablet-small {
-      flex-direction: column;
+    @include tablet {
       gap: 15px;
     }
-  }
 
-  &__li {
+    @include tablet-small {
+      flex-direction: column;
+    }
   }
 
   &__a {
     color: var(--c-white);
     font-size: 16px;
     font-weight: 400;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-primary);
+    }
   }
 }

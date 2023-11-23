@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/icons/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,33 +15,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Start project</title>
+    <title>William King</title>
   </head>
 
   <body>
     <div class="wrapper">
       <div class="container">
         <header class="header">
-          <a href="/" class="header__logo">William King <span>.</span></a>
+          <a href="#welcome" class="header__logo"
+            >William King <span>.</span></a
+          >
           <div class="header__nav">
             <ul class="header__ul" id="headerUl">
               <li class="header__li">
-                <a class="header__a is-active" href="/">About</a>
+                <a class="header__a is-active" href="#welcome">About</a>
               </li>
               <li class="header__li">
-                <a class="header__a" href="/">Services</a>
+                <a class="header__a" href="#service">Services</a>
               </li>
               <li class="header__li">
-                <a class="header__a" href="/">Portfolio</a>
+                <a class="header__a" href="#portfolio">Portfolio</a>
               </li>
               <li class="header__li">
-                <a class="header__a" href="/">Testimonials</a>
+                <a class="header__a" href="#customers">Testimonials</a>
               </li>
               <li class="header__li">
-                <a class="header__a" href="/">Pricing</a>
+                <a class="header__a" href="#pricing">Pricing</a>
               </li>
               <li class="header__li">
-                <a class="header__a" href="/">Contact</a>
+                <a class="header__a" href="#touch">Contact</a>
               </li>
               <span class="material-icons icon-close" onclick="navToggle()"
                 >close</span
@@ -52,7 +55,7 @@
             >
           </div>
         </header>
-        <section class="welcome">
+        <section class="welcome" id="welcome">
           <div class="welcome__info">
             <div class="welcome__title">I’m William K.</div>
             <div class="welcome__role">
@@ -73,7 +76,7 @@
             <img src="./img/welcome.png" alt="Welcome" />
           </div>
         </section>
-        <section class="service">
+        <section class="service" id="service">
           <div class="title">My <span>Services</span></div>
           <div class="desc">
             Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
@@ -182,7 +185,7 @@
             </div>
           </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="title">My <span>Portfolio</span></div>
           <div class="desc">
             Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
@@ -240,7 +243,7 @@
             </div>
           </div>
         </section>
-        <section class="customers">
+        <section class="customers" id="customers">
           <div class="title">Listen to my <span>customers</span></div>
           <div class="desc">
             Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
@@ -314,15 +317,113 @@
             </div>
           </div>
         </section>
-        <section class="pricing">
+        <section class="pricing" id="pricing">
           <div class="title">My <span>Pricing</span></div>
           <div class="desc">
             Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
             dignissim. Commodo pellentesque tristique aliquet turpis. Morbi
             risus imperdiet
           </div>
+          <div class="pricing__list">
+            <div class="prising-item">
+              <div class="prising-item__title">Silver</div>
+              <div class="prising-item__price">$99.0</div>
+              <div class="prising-item__desc">
+                Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+                turpis dignissim. Commodo pellentesque tristique aliquet turpis.
+                Morbi risus imperdiet
+              </div>
+              <a href="/" class="btn btn_secondary prising-item__btn"
+                >Get Started</a
+              >
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+            </div>
+            <div class="prising-item">
+              <div class="prising-item__title">Silver</div>
+              <div class="prising-item__price">$99.0</div>
+              <div class="prising-item__desc">
+                Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+                turpis dignissim. Commodo pellentesque tristique aliquet turpis.
+                Morbi risus imperdiet
+              </div>
+              <a href="/" class="btn btn_primary prising-item__btn"
+                >Get Started</a
+              >
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+            </div>
+            <div class="prising-item">
+              <div class="prising-item__title">Silver</div>
+              <div class="prising-item__price">$99.0</div>
+              <div class="prising-item__desc">
+                Rutrum cursus varius ullamcorper venenatis faucibus lobortis
+                turpis dignissim. Commodo pellentesque tristique aliquet turpis.
+                Morbi risus imperdiet
+              </div>
+              <a href="/" class="btn btn_secondary prising-item__btn"
+                >Get Started</a
+              >
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+              <div class="prising-item__item">
+                <img src="./img/icons/ceheck.svg" alt="Ceheck" />
+                <span>12 GB Free space</span>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="touch">
+        <section class="touch" id="touch">
           <div class="title">Get in <span>touch</span></div>
           <div class="desc">
             Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
@@ -334,6 +435,7 @@
               <input
                 type="text"
                 placeholder="Enter Your Name"
+                required
                 class="touch-form__text"
               />
             </label>
@@ -341,6 +443,7 @@
               <input
                 type="email"
                 placeholder="Enter your email address"
+                required
                 class="touch-form__email"
               />
             </label>
@@ -359,7 +462,7 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__desc">
-            © 2020 All rights reserved. Designed by <span>SA7MAN.</span>
+            © 2023 All rights reserved. Designed by <span>SA7MAN.</span>
           </div>
           <div class="footer__nav">
             <ul class="footer__ul">

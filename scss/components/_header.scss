@@ -77,9 +77,12 @@
     font-size: 16px;
     font-weight: 400;
     transition: var(--transition);
-    &.is-active,
-    &:hover {
-      color: var(--c-primary);
+
+    @include tablet-min {
+      &.is-active,
+      &:hover {
+        color: var(--c-primary);
+      }
     }
   }
 }

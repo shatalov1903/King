@@ -390,8 +390,10 @@ section {
   font-weight: 400;
   transition: var(--transition);
 }
-.header__a.is-active, .header__a:hover {
-  color: var(--c-primary);
+@media (min-width: 992px) {
+  .header__a.is-active, .header__a:hover {
+    color: var(--c-primary);
+  }
 }
 
 .icon-menu,
@@ -548,6 +550,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition);
+}
+.service-item__img:hover {
+  transform: translateY(-5px);
 }
 .service-item__img svg path:first-child {
   fill: var(--c-primary);
@@ -653,6 +659,10 @@ section {
   flex-shrink: 0;
   width: 71px;
   height: 71px;
+  transition: var(--transition);
+}
+.customers-item__img:hover {
+  transform: translateY(-5px);
 }
 .customers-item__name {
   color: var(--c-white);
@@ -666,6 +676,68 @@ section {
   font-size: 18px;
   font-weight: 400;
   line-height: 160%;
+}
+
+.pricing__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(362px, 1fr));
+  gap: 26px;
+}
+@media (max-width: 380px) {
+  .pricing__list {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+.prising-item {
+  border-radius: 8px;
+  background: var(--c-dark2);
+  padding: 32px;
+}
+.prising-item__title {
+  color: var(--c-white);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.prising-item__price {
+  color: var(--c-white);
+  font-size: 44px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.prising-item__desc {
+  color: var(--c-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 35px;
+}
+.prising-item__btn {
+  margin-bottom: 40px;
+}
+.prising-item__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #a19a8b;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 21px;
+}
+.prising-item__item:last-child {
+  margin-bottom: 0;
+}
+
+.btn_secondary {
+  border: 1px solid var(--c-primary);
+}
+.btn_secondary:hover {
+  background: #3a3835;
 }
 
 .touch {
@@ -737,16 +809,24 @@ section {
   align-items: center;
   gap: 34px;
 }
+@media (max-width: 992px) {
+  .footer__ul {
+    gap: 15px;
+  }
+}
 @media (max-width: 768px) {
   .footer__ul {
     flex-direction: column;
-    gap: 15px;
   }
 }
 .footer__a {
   color: var(--c-white);
   font-size: 16px;
   font-weight: 400;
+  transition: var(--transition);
+}
+.footer__a:hover {
+  color: var(--c-primary);
 }
 
 /*# sourceMappingURL=style.css.map */
