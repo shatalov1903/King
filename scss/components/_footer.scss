@@ -1,0 +1,55 @@
+.footer {
+  background: var(--c-dark2);
+  padding: 53px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    @include tablet-small {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+  }
+
+  &__desc {
+    color: var(--c-white);
+    font-size: 16px;
+    font-weight: 400;
+
+    @include tablet-small {
+      max-width: 230px;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    span {
+      color: var(--c-primary);
+    }
+  }
+
+  &__nav {
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+
+    @include tablet-small {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__li {
+  }
+
+  &__a {
+    color: var(--c-white);
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
