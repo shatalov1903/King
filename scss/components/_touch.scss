@@ -1,0 +1,39 @@
+.touch {
+  border-bottom: none;
+}
+
+.touch-form {
+  &__label {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  &__text,
+  &__email,
+  &__textarea {
+    display: block;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 14px 16px;
+    background: var(--c-dark1);
+    color: var(--c-body);
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  &__textarea {
+    min-height: 120px;
+    resize: none;
+  }
+
+  &__btn {
+    color: var(--c-white);
+    font-family: var(--ff);
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
