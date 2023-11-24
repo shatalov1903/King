@@ -4,6 +4,14 @@ body {
   color: var(--c-white);
 }
 
+html {
+  font-size: 1px;
+
+  @include mobile {
+    font-size: 0.8px;
+  }
+}
+
 html._overflow {
   overflow: hidden;
 
@@ -26,6 +34,10 @@ a {
 section {
   padding-bottom: 90px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+  @include mobile {
+    padding-bottom: 50px;
+  }
 }
 
 .btn {
@@ -43,8 +55,20 @@ section {
   &_primary {
     background: var(--c-primary);
 
-    &:hover {
-      background: darken($c-primary, 5%);
+    @include tablet-min {
+      &:hover {
+        background: darken($c-primary, 5%);
+      }
+    }
+  }
+
+  &_secondary {
+    border: 1px solid var(--c-primary);
+
+    @include tablet-min {
+      &:hover {
+        background: lighten($c-dark2, 5%);
+      }
     }
   }
 }
@@ -52,12 +76,12 @@ section {
 .title {
   margin-top: 90px;
   color: var(--c-white);
-  font-size: 44px;
+  font-size: 44rem;
   font-weight: 700;
   margin-bottom: 17px;
 
   @include mobile {
-    font-size: 32px;
+    margin-top: 70px;
   }
 
   span {
@@ -67,13 +91,9 @@ section {
 
 .desc {
   color: var(--c-body);
-  font-size: 16px;
+  font-size: 16rem;
   font-weight: 400;
   line-height: 160%;
   max-width: 460px;
   margin-bottom: 40px;
-
-  @include mobile {
-    font-size: 14px;
-  }
 }

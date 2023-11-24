@@ -31,8 +31,10 @@
     justify-content: center;
     transition: var(--transition);
 
-    &:hover {
-      transform: translateY(-5px);
+    @include tablet-min {
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
 
     svg {

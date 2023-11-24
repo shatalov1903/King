@@ -25,7 +25,7 @@
 
   &__price {
     color: var(--c-white);
-    font-size: 44px;
+    font-size: 44rem;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 14px;
@@ -56,15 +56,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-}
-.btn {
-  &_secondary {
-    border: 1px solid var(--c-primary);
-
-    &:hover {
-      background: lighten($c-dark2, 5%);
     }
   }
 }

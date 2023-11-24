@@ -16,13 +16,17 @@
 
   &__desc {
     color: var(--c-white);
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
 
     @include tablet-small {
       max-width: 230px;
       text-align: center;
       line-height: 25px;
+    }
+
+    @include mobile {
+      max-width: 215px;
     }
 
     span {
@@ -50,8 +54,10 @@
     font-weight: 400;
     transition: var(--transition);
 
-    &:hover {
-      color: var(--c-primary);
+    @include tablet-min {
+      &:hover {
+        color: var(--c-primary);
+      }
     }
   }
 }
