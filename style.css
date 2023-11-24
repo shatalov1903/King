@@ -688,6 +688,12 @@ section {
     transform: translateY(-5px);
   }
 }
+.customers-item__img img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 .customers-item__name {
   color: var(--c-white);
   font-size: 18rem;
